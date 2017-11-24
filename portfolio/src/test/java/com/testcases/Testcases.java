@@ -29,7 +29,7 @@ import com.webpages.Webpages;
 	//System.setProperty("webdriver.gecko.driver","C:\\Users\\hossain\\Desktop\\Sel\\geckodriver-v0.19.0-win64\\geckodriver.exe");
 	//driver = new FirefoxDriver();
 	//The website to invoke
-	driver.get("http://zadeezx.wixsite.com/portfolio");
+	driver.get("http://zadeezx.wixsite.com/portfolio1");
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
