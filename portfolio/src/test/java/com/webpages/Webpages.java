@@ -21,7 +21,14 @@ package com.webpages;
 
 	@FindBy(id="comp-ifwo3akw3label")
 	public WebElement contact;
-
+  
+	@FindBy(id="comp-jaddqnbp0imageimageimage")
+	public WebElement fb;
+	
+	public WebElement clickfb() {
+		return fb;
+	
+	}
 	public WebElement typehome(){
 		return home;
 	}
@@ -65,7 +72,4 @@ package com.webpages;
 			message.sendKeys(msg);
 		
 		}
-	
-
-
 }

@@ -36,7 +36,7 @@ import com.webpages.Webpages;
 	@Test
 		public void firsttest() throws InterruptedException{
 
-	 Webpages home = new Webpages(driver);
+	Webpages home = new Webpages(driver);
 	 
 	 home.typehome().click();
 	 home.typecontact().click();
@@ -48,11 +48,19 @@ import com.webpages.Webpages;
 	 Thread.sleep(3000);
 	 try{
 		 Assert.assertTrue(true,"Success! Message sent");
-		 System.out.println("passed the case");
+		 System.out.println("The test case-PASSED");
 	 }
 	 catch (Exception e){
-		 System.out.println("it has failed");
+		 System.out.println("The test case-FAILED");
 	 }
+	}
+	@Test
+	public void secondtest() {
+	Webpages fb = new Webpages(driver);	
+	 fb.clickfb().click();
+	 
+	Assert.assertEquals("Adnan's Photography Portfolio - Home | Facebook", driver.getTitle());
+	 
 	 }
 	 @AfterTest
 	 public void teardown(){
